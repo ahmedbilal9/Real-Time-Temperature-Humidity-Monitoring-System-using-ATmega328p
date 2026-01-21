@@ -56,10 +56,10 @@ This document describes the hardware connections and requirements for the Real-T
 
 | OLED Pin | Function | ATmega328p Pin | Notes |
 |----------|----------|----------------|-------|
-| VCC | Power | VCC (+5V) | Some modules require 3.3V - check your module |
+| VCC | Power | VCC (+5V) | **Note:** Most I2C OLEDs support 5V, but some require 3.3V - check your module's datasheet. If 3.3V is required, use a voltage regulator or level shifter. |
 | GND | Ground | GND | Ground connection |
-| SDA | I2C Data | PC4 (Pin 27) | Shares I2C bus with SHT21 |
-| SCL | I2C Clock | PC5 (Pin 28) | Shares I2C bus with SHT21 |
+| SDA | I2C Data | PC4 (Pin 27) | Shares I2C bus with SHT21. Use 4.7kΩ pull-up to VCC (5V). Most I2C OLEDs are 5V-tolerant. |
+| SCL | I2C Clock | PC5 (Pin 28) | Shares I2C bus with SHT21. Use 4.7kΩ pull-up to VCC (5V). Most I2C OLEDs are 5V-tolerant. |
 
 **OLED I2C Address:** 0x3C (7-bit addressing)
 
