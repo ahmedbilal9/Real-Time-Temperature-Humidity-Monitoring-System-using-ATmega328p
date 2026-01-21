@@ -1,0 +1,36 @@
+# Build artifacts
+*.elf
+*.hex
+*.o
+*.d
+*.map
+*.lst
+*.lss
+*.sym
+*.eep
+*.bin
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo
+*#
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.tmp
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.iml
+.project
+.cproject
+.settings/
+*.sublime-*
+
+# Temporary files
+/tmp/
+*.log
